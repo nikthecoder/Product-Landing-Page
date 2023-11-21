@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 232px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#container {
+    position: relative;
+}
+
+#header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    position: fixed;
+    padding-bottom: 30px;
+    top: 0;
+    width: 100%;
+}
+
+#header-img {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    text-align: center;
+}
+
+#nav-bar {
+    display: flex;
+    background-color: #000000; /* Add background color to the navigation bar to make it opaque */
+    justify-content: center;
+}
+
+#form {
+    text-align: center;
+    padding: 20px;
+}
+
+#email {
+    padding: 10px;
+    margin: 10px;
+    margin-top: 250px;
+    width: 20%;
+    border: 1px solid #ccc;
+}
+
+
+#submit {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#section1,
+#section2,
+#section3 {
+    padding: 30px; /* Adjust padding to create space */
+    scroll-snap-align: start;
+}
+
+#features {
+    list-style-position: inside; /* Place bullet points inside the list items */
+}
+
+
+#video {
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    height: 300px;
+}
+
+.pricing-box {
+    border: 3px solid #ccc;
+    box-shadow: 2px 3px #989898;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #a7a7a7;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    display: flex; /* Align list items horizontally */
+    justify-content: flex-end; /* Align list items to the right */
+}
+
+footer li {
+    margin-right: 20px; /* Add some spacing between list items */
+}
+
+footer a {
+    text-decoration: none;
+    color: #242424;
+}
+
+footer span {
+    display: block; /* Create a new block formatting context for the copyright text */
+    text-align: right; /* Align the text to the right */
+}
+
+
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    #video {
+        width: 100%;
+    }
+}
